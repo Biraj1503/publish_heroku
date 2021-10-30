@@ -2,6 +2,13 @@ const express = require('express')
 const app = express()
 
 app.set('views engin','ejs')
+
+app.get('/concat',(req,res,next)=>{
+	res.json({
+		message:"Concat page"
+	})
+})
+
 app.get('/about',(req,res,next)=>{
 	res.json({
 		message:"About page"
