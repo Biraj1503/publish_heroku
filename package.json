@@ -1,0 +1,29 @@
+{
+  "name": "publish_heroku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Biraj1503/publish_heroku.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Biraj1503/publish_heroku/issues"
+  },
+  "homepage": "https://github.com/Biraj1503/publish_heroku#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+
+  "engines":{
+    "node":"12.13.0"
+  }
+}
