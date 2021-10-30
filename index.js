@@ -7,21 +7,6 @@ app.get('/',(req,res,next)=>{
 	res.render('home.ejs')
 })
 
-/*app.get('/concat',(req,res,next)=>{
-	res.json({
-		address:"Braishal,Bangladesh",
-		Home:"Paterhat,Mehendigonj"
-	})
-})
-
-app.get('/',(req,res,next)=>{
-	res.json({
-		name:"Biraj Kumar Biswas",
-		email:"toshebamail@gmail.com",
-		age:27
-	})
-})*/
-
 app.get('*',(re,res,next)=>{
 	res.json({
 		message:"404 Not Found"
