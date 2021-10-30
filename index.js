@@ -3,6 +3,10 @@ const app = express()
 const MONGDB_URI = 'mongodb+srv://SM:studentmanagment@newproject.92n8k.mongodb.net/students'
 app.set('views engin','ejs')
 
+app.get('/',(req,res,next)=>{
+	res.render('home.ejs')
+})
+
 app.get('/concat',(req,res,next)=>{
 	res.json({
 		address:"Braishal,Bangladesh",
@@ -16,10 +20,6 @@ app.get('/about',(req,res,next)=>{
 		email:"toshebamail@gmail.com",
 		age:27
 	})
-})
-
-app.get('/',(req,res,next)=>{
-	res.render('home.ejs')
 })
 
 app.get('*',(re,res,next)=>{
