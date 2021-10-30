@@ -5,15 +5,11 @@ const MONGDB_URI = 'mongodb+srv://SM:studentmanagment@newproject.92n8k.mongodb.n
 app.set('views engin','ejs')
 
 app.get('/concat',(req,res,next)=>{
-	res.json({
-		message:"Concat page"
-	})
+	res.render('concat.ejs')
 })
 
 app.get('/about',(req,res,next)=>{
-	res.json({
-		message:"About page"
-	})
+	res.render('about.ejs')
 })
 app.get('/',(req,res,next)=>{
 	res.render('home.ejs')
