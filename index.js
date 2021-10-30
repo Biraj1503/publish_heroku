@@ -2,7 +2,11 @@ const express = require('express')
 const app = express()
 
 app.set('views engin','ejs')
-
+app.get('/about',(req,res,next)=>{
+	res.json({
+		message:"About page"
+	})
+})
 app.get('/',(req,res,next)=>{
 	res.render('home.ejs')
 })
